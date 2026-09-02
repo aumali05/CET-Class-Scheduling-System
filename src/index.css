@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Quicksand:wght@300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sans;
+}
+
+@keyframes loading-bar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-loading-bar {
+  animation: loading-bar 1s forwards;
+}
+
+:root {
+  --sidebar-width: 288px; /* w-72 */
+}
+
+/* Sidebar collapsed */
+.sidebar-collapsed {
+  --sidebar-width: 64px; /* w-16 */
+}
+
+/* Sidebar expanded */
+.sidebar-expanded {
+  --sidebar-width: 288px;
+}
+
+/* Toolbar and content shift */
+.toolbar-responsive {
+  width: calc(100vw - var(--sidebar-width));
+}
+
+.recent-container {
+  max-width: calc(100vw - var(--sidebar-width));
+}
+
+
