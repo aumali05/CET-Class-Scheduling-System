@@ -76,7 +76,7 @@ The system streamlines scheduling by reducing manual work, preventing conflicts,
   </div>
 
   <div>
-    <h4>Drag & Dropand with Conflict Detection</h4>
+    <h4>Drag & Drop with Conflict Detection</h4>
     <img src="public/imgs/screenshots/DragnDropandConflictDetection.png" alt="Drag & Dropand + ConflictDetection" width="100%" />
   </div>
 
